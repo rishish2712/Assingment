@@ -4,7 +4,7 @@ import ProductsDonut from "../components/ProductsDonut";
 import AddProfileCard from "../components/AddProflie"; // new trigger that opens the modal
 
 async function getAll() {
-    const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+    const base = process.env.NEXT_PUBLIC_BASE_URL;
     const [m, a, p] = await Promise.all([
         fetch(base + "/api/metrics", { cache: "no-store" }),
         fetch(base + "/api/activities", { cache: "no-store" }),

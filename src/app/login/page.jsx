@@ -33,7 +33,7 @@ export default function LoginPage() {
                     {/* Left brand panel (hidden on mobile) */}
                     <aside className="relative hidden md:flex md:w-1/5 xl:w-1/4">
                         <div className="absolute inset-0 bg-[#635bff]" />
-                        <div className="absolute inset-y-0 -right-10 w-19 bg-[#635bff] skew-x-[-9deg]" />
+                        <div className="absolute inset-y-0 -right-10 w-20 bg-[#635bff] skew-x-[-9deg]" />
                         <div className="relative z-10 flex flex-col justify-center px-8">
                             <div className="absolute top-8 left-8 h-11 w-11 rounded-full bg-white/20 flex items-center justify-center">
                                 <span className="h-5 w-5 rounded-full border-2 border-white/85 inline-block" />
