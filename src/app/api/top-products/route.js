@@ -1,6 +1,6 @@
 import clientPromise from '@/app/lib/mongodb'
 
-export async function GET() {
+export function GET() {
   try {
     //Code for fetching the data from database
 
