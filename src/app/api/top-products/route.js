@@ -2,6 +2,8 @@ import clientPromise from '@/app/lib/mongodb'
 
 export async function GET() {
   try {
+    //Code for fetching the data from database
+
     //   const client = await clientPromise
     //   const db = client.db(process.env.MONGODB_DB)
 
