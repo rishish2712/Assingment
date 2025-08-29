@@ -5,6 +5,8 @@ export async function GET() {
     const client = await clientPromise
     const db = client.db(process.env.MONGODB_DB)
 
+    //Code for fetching the data from database
+
     // group by week and customerType to produce Guest/User series
     //   const rows = await db
     //     .collection('transactions')
