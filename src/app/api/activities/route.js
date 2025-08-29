@@ -1,12 +1,11 @@
 import clientPromise from '../../lib/mongodb'
 
-export async function GET() {
+export function GET() {
   try {
-    const client = await clientPromise
-    const db = client.db(process.env.MONGODB_DB)
-
     //Code for fetching the data from database
 
+    // const client = await clientPromise
+    // const db = client.db(process.env.MONGODB_DB)
     // group by week and customerType to produce Guest/User series
     //   const rows = await db
     //     .collection('transactions')
