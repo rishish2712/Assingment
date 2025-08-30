@@ -44,7 +44,6 @@ export function GET() {
       guest: [400, 450, 300, 350],
       user: [500, 350, 200, 500],
     }
-    console.log('API /metrics success:', data) // server logs once
     return Response.json(data, { status: 200 })
   } catch (e) {
     console.error('API /metrics failed:', e) // server logs once
