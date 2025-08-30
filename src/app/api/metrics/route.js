@@ -42,20 +42,17 @@ export function GET() {
     // )
 
     const data = {
-      totalRevenue: 2129430, 
-      totalProfit: 684210, 
-      totalTransactions: 1520, 
-      totalUsers: 9721, 
-      totalLikes: 9721, 
+      totalRevenue: 2129430,
+      totalProfit: 684210,
+      totalTransactions: 1520,
+      totalUsers: 9721,
+      totalLikes: 9721,
     }
     return Response.json(data, { status: 200 })
   } catch (e) {
     console.error('API /metrics failed:', e)
-    return new Response(
-      JSON.stringify({ error: 'Failed to load top-product' }),
-      {
-        status: 500,
-      }
-    )
+    return new Response(JSON.stringify({ error: 'Failed to load metrics' }), {
+      status: 500,
+    })
   }
 }

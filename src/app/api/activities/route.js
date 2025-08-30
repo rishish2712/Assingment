@@ -46,9 +46,9 @@ export function GET() {
     }
     return Response.json(data, { status: 200 })
   } catch (e) {
-    console.error('API /metrics failed:', e) 
+    console.error('API /metrics failed:', e)
     return new Response(
-      JSON.stringify({ error: 'Failed to load top-product' }),
+      JSON.stringify({ error: 'Failed to load activities' }),
       {
         status: 500,
       }
