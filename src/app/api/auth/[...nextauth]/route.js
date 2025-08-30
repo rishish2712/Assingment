@@ -36,7 +36,7 @@ export const authOptions = {
         ) {
           return { id: demoUser.id, email: demoUser.email }
         }
-        return null // invalid -> NextAuth fails sign-in
+        return null 
       },
     }),
   ],

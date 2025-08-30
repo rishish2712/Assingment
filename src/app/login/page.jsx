@@ -18,7 +18,7 @@ export default function LoginPage() {
         const res = await signIn("credentials", {
             email,
             password,
-            redirect: false, // handle redirect manually
+            redirect: false, 
             callbackUrl: "/dashboard",
         });
         setLoading(false);
@@ -27,10 +27,10 @@ export default function LoginPage() {
     }
 
     return (
-        <div className="min-h-screen grid place-items-center bg-[#f6f7fb] px-4"> {/* centered at any size */} {/* responsive centering */}
+        <div className="min-h-screen grid place-items-center bg-[#f6f7fb] px-4"> 
             <div className="w-full max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-4xl">
                 <div className="md:flex md:items-stretch">
-                    {/* Left brand panel (hidden on mobile) */}
+                    {/* Left brand panel */}
                     <aside className="relative hidden md:flex md:w-1/5 xl:w-1/4">
                         <div className="absolute inset-0 bg-[#635bff]" />
                         <div className="absolute inset-y-0 -right-10 w-20 bg-[#635bff] skew-x-[-9deg]" />

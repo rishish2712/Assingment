@@ -42,13 +42,11 @@ export function GET() {
     const data = {
       period: 'May – June 2021',
       labels: ['Basic Tees', 'Custom Short Pants', 'Super Hoodies'],
-      // Use raw values or percentages; the donut will render either.
-      // If you want exact 55/31/14% shares, keep these proportional.
       values: [55, 31, 14],
     }
     return Response.json(data, { status: 200 })
   } catch (e) {
-    console.error('API /metrics failed:', e) // server logs once
+    console.error('API /metrics failed:', e) 
     return new Response(
       JSON.stringify({ error: 'Failed to load top-product' }),
       {

@@ -1,7 +1,7 @@
-// app/dashboard/page.jsx
+
 import Activities from "../components/ActivitiesChart";
 import ProductsDonut from "../components/ProductsDonut";
-import AddProfileCard from "../components/AddProflie"; // new trigger that opens the modal
+import AddProfileCard from "../components/AddProflie"; 
 
 async function getAll() {
     const base = process.env.NEXT_PUBLIC_BASE_URL;
@@ -76,7 +76,6 @@ export default async function Dashboard() {
                                     <div className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full bg-green-400" /> User</div>
                                 </div>
                             </div>
-                            {/* Guard inside chart ensures it renders only with valid arrays */}
                             <Activities labels={activities.labels} guest={activities.guest} user={activities.user} />
                         </div>
                     </section>
@@ -90,8 +89,6 @@ export default async function Dashboard() {
                             </div>
                             <ProductsDonut labels={products.labels} values={products.values} />
                         </div>
-
-                        {/* Replaces the <a onClick={...}> with a proper client trigger */}
                         <AddProfileCard />
                     </section>
                 </main>

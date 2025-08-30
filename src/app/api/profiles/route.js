@@ -1,9 +1,8 @@
 import clientPromise from '../../lib/mongodb'
 
-// POST /api/profiles
 export async function POST(request) {
   try {
-    const body = await request.json() // { name, email, phone, instagram, youtube }
+    const body = await request.json()
     const { name, email, phone, instagram, youtube } = body ?? {}
 
     const client = await clientPromise

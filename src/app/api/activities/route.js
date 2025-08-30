@@ -46,7 +46,7 @@ export function GET() {
     }
     return Response.json(data, { status: 200 })
   } catch (e) {
-    console.error('API /metrics failed:', e) // server logs once
+    console.error('API /metrics failed:', e) 
     return new Response(
       JSON.stringify({ error: 'Failed to load top-product' }),
       {

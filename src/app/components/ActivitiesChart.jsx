@@ -13,7 +13,6 @@ export default function ActivitiesChart({ labels, guest, user }) {
         user.length === labels.length;
 
     if (!ready) {
-        // render a small placeholder instead of a blank chart
         return <div className="h-56 grid place-items-center text-gray-400 text-sm">No data</div>;
     }
 
